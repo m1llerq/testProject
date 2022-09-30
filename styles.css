@@ -8,6 +8,7 @@
   max-width: 1360px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -53,4 +54,39 @@ header {
 
 .button {
   margin-left: 200px;
+}
+
+.mainspace {
+  height: 1200px;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 164px;
+}
+
+.refs {
+  padding-top: 40px;
+}
+
+h1 {
+  padding-top: 83px;
+}
+
+.textspace {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  max-width: 1110px;
+  padding-top: 97px;
+  gap: 88px 180px;
+}
+
+.textspace > div {
+  width: 240px;
+  height: 90px;
+}
+
+.textspace > div > h2 {
+  margin-bottom: 12px;
 }
