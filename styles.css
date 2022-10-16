@@ -33,29 +33,70 @@ header {
   display: flex;
   flex-direction: row;
   gap: 35px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-  height: 80px;
   align-items: center;
 }
 
-.service {
+.menu a:hover {
   display: flex;
   height: 44px;
   align-items: center;
   color: #e9cd7b;
   font-weight: 400;
   border-bottom: 1px solid #e9cd7b;
+  transition: color 0.2s linear;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .Logo {
   padding-left: 60px;
 }
 
-.buttonBorder > a {
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  width: 200px;
+  height: 45px;
+  background: #eac55e;
+  border-radius: 4px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 18px;
+  color: #575c61;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header > .button {
+  width: 174px;
+  height: 44px;
+  border: 1px solid #e9cd7b;
+  border-radius: 4px;
+  background: #373f48;
+  font-style: normal;
+  font-weight: 600;
+  color: #e9cd7b;
+  margin-right: 60px;
+}
+
+.contacts .button {
+  margin-left: 29px;
+  margin-top: 8px;
+}
+/* .buttonBorder > a {
   text-decoration: none;
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
@@ -73,14 +114,12 @@ header {
   height: 44px;
   border: 1px solid #e9cd7b;
   border-radius: 4px;
-  /* margin-top: 18px;
-  margin-bottom: 18px; */
   margin-right: 60px;
-}
+} */
 
 .mainspace {
-  height: 886px;
-  background-color: #f1f1f1;
+  /* height: 886px; */
+  background-color: #ffffff;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -122,22 +161,29 @@ h1 {
   color: #373f48;
 }
 
-.textspace {
+.text-space {
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
   max-width: 1110px;
-  padding-top: 97px;
-  gap: 88px 180px;
-  margin-left: 164px;
+  padding-top: 69px;
+  margin-left: 121px;
 }
 
-.textspace > div {
-  width: 240px;
-  height: 90px;
+.text-space > div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 33.3%;
+  padding-left: 45px;
+  padding-top: 30px;
+  padding-bottom: 27px;
+  padding-right: 27px;
+  border: 1px solid;
+  border-color: transparent;
 }
 
-.textspace > div > h2 {
+.text-space > div > h2 {
   margin-bottom: 12px;
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
@@ -145,6 +191,30 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   color: #373f48;
+}
+.text-space > div > a {
+  color: #eac55e;
+  text-decoration: none;
+  margin-top: 22px;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 69px;
+  opacity: 0;
+}
+
+.text-space > div:hover {
+  border: 1px solid #eac55e;
+  border-radius: 4px;
+  transition: 0.2s linear;
+}
+
+.text-space > div:hover > a {
+  opacity: 1;
+  transition: 0.2s linear;
 }
 
 hr {
@@ -161,11 +231,12 @@ hr {
   );
 }
 
-.zalivka {
+.contacts {
   display: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
-  height: 315px;
+  background-color: #ffffff;
+  margin-top: 33px;
+  margin-bottom: 139px;
 }
 .bottomspace {
   display: flex;
@@ -210,7 +281,7 @@ hr {
   color: #373f48;
 }
 
-.booking {
+/* .booking {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,22 +302,21 @@ hr {
   color: #575c61;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
-}
+} */
 
 footer {
   display: flex;
   flex-direction: column;
-  height: 381px;
 }
 
-.veryBottom {
+.copyright {
   display: flex;
   align-items: center;
   background-color: #e6e6e6;
   height: 66px;
 }
 
-.copy {
+.copy-sign {
   margin-left: 60px;
   font-style: normal;
   font-weight: 400;
